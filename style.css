@@ -4,6 +4,10 @@ body {
     font-weight: 400;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* Images */
 
 .arrow-down {
@@ -16,8 +20,8 @@ body {
 
 .bg-desktop {
     position: absolute;
-    top: -365px;
-    left: -493px;
+    top: -276px;
+    left: -575px;
 }
 
 .bg-mobile {
@@ -25,14 +29,15 @@ body {
 }
 
 .box {
+    left: -93px;
     position: absolute;
-    top: 140px;
-    left: -15px;
-    z-index: 1;
+    top: 225px;
 }
 
 .woman-desktop {
+    left: -80px;
     position: relative;
+    top: 90px;
 }
 
 .woman-mobile {
@@ -98,9 +103,8 @@ body {
 }
 
 .left-col {
-    display: inline;
-    flex-grow: 0;
-    left: -78px;
+    height: 100%;
+    overflow: hidden;
     position: relative;
 }
 
@@ -116,13 +120,22 @@ body {
     width: 400px;
 }
 
+.question-list {
+    max-height: 345px;
+    overflow-y: scroll;
+}
+
+.question-list::-webkit-scrollbar {
+    display: none;
+}
+
 .row {
     align-items: center;
     background: #fff;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    position: relative;
 }
 
 /* Typography */
@@ -145,11 +158,10 @@ body {
 
 .title {
     margin-bottom: 15px;
-    text-align: center;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     /* Images */
 
@@ -181,7 +193,8 @@ body {
     /* Sections */
 
     .left-col {
-        left: 0;
+        height: auto;
+        overflow: unset;
     }
 
     .right-col {
@@ -195,6 +208,12 @@ body {
     .row {
         flex-direction: column;
         overflow: unset;
+    }
+
+    /* Typography */
+
+    .title {
+        text-align: center;
     }
 
 }
