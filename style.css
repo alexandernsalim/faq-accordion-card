@@ -11,10 +11,10 @@ body::-webkit-scrollbar {
 /* Images */
 
 .arrow-down {
-    height: 15px;
+    height: 10px;
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 3px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -31,13 +31,13 @@ body::-webkit-scrollbar {
 .box {
     left: -93px;
     position: absolute;
-    top: 225px;
+    top: 200px;
 }
 
 .woman-desktop {
     left: -80px;
     position: relative;
-    top: 90px;
+    top: 65px;
 }
 
 .woman-mobile {
@@ -84,12 +84,12 @@ body::-webkit-scrollbar {
 .attribution { 
     color: #fff;
     font-size: 11px; 
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center; 
 }
 
 .attribution a { 
-    color: hsl(14, 88%, 65%);
+    color: hsl(29, 100%, 81%);
 }
 
 /* Sections */
@@ -115,14 +115,16 @@ body::-webkit-scrollbar {
 
 .question-box {
     border-bottom: 1px solid hsl(240, 5%, 91%);
-    padding: 10px 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: relative;
     width: 400px;
 }
 
 .question-list {
-    max-height: 345px;
+    max-height: 285px;
     overflow-y: scroll;
+    padding-top: 25px;
 }
 
 .question-list::-webkit-scrollbar {
@@ -133,6 +135,7 @@ body::-webkit-scrollbar {
     align-items: center;
     background: #fff;
     border-radius: 25px;
+    box-shadow: 20px 20px 70px rgba(32, 32, 32, 0.4); 
     display: flex;
     flex-direction: row;
     position: relative;
@@ -143,7 +146,7 @@ body::-webkit-scrollbar {
 .answer {
     color: hsl(240, 6%, 50%);
     display: none;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .question {
@@ -157,7 +160,7 @@ body::-webkit-scrollbar {
 }
 
 .title {
-    margin-bottom: 15px;
+    margin: 4px 0 15px;
 }
 
 
@@ -198,7 +201,7 @@ body::-webkit-scrollbar {
     }
 
     .right-col {
-        padding: 128px 25px 55px;
+        padding: 128px 25px 35px;
     }
 
     .question-box {
